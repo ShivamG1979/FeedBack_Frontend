@@ -59,7 +59,7 @@ function FeedbackForm({ onFeedbackSubmitted }) {
       setIsSubmitting(true);
       
       try {
-        const response = await fetch('/api/submit-feedback', {
+        const response = await fetch('https://feedback-backeng.onrender.com/api/submit-feedback', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

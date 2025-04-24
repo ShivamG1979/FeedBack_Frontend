@@ -12,7 +12,7 @@ function AdminView({ onSwitchView }) {
     setError(null); 
     
     try {
-      const response = await fetch('/api/feedbacks');
+      const response = await fetch('https://feedback-backeng.onrender.com/api/feedbacks');
       
       if (!response.ok) {
         throw new Error(`Failed to fetch feedbacks: ${response.status}`);

@@ -58,7 +58,7 @@ function EditFeedbackModal({ feedback, onClose, onSave }) {
       setIsSubmitting(true);
       
       try {
-        const response = await fetch(`/api/feedbacks/${feedback._id}`, {
+        const response = await fetch(`https://feedback-backeng.onrender.com/api/feedbacks/${feedback._id}`, {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json',

@@ -57,7 +57,7 @@ function FeedbackList({ feedbacks, loading, onFeedbackUpdated }) {
     if (window.confirm('Are you sure you want to delete this feedback?')) {
       setDeleteLoading(id);
       try {
-        const response = await fetch(`/api/feedbacks/${id}`, {
+        const response = await fetch(`https://feedback-backeng.onrender.com/api/feedbacks/${id}`, {
           method: 'DELETE',
         });
         
